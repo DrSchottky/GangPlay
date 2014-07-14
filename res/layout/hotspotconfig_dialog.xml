@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/hotSpotConfigLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="@string/hotspot_config_label"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/passwordTypeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/hotSpotConfigLabel"
+        android:layout_below="@+id/SSIDTextBox"
+        android:layout_marginTop="48dp" >
+
+        <RadioButton
+            android:id="@+id/noPasswordRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_password_label" />
+
+        <RadioButton
+            android:id="@+id/WPAPasswordRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/WPA_password_label" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/passwordTextBox"
+        android:layout_alignBottom="@+id/passwordTextBox"
+        android:layout_marginRight="11dp"
+        android:layout_toLeftOf="@+id/passwordTextBox"
+        android:text="@string/password_label" />
+
+    <TextView
+        android:id="@+id/encryptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/passwordTypeRadioGroup"
+        android:layout_alignRight="@+id/passwordLabel"
+        android:layout_marginBottom="18dp"
+        android:text="@string/encryption_label" />
+
+    <TextView
+        android:id="@+id/SSIDLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/encryptionLabel"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="45dp"
+        android:text="@string/SSID_label" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordLabel"
+        android:layout_alignTop="@+id/hotSpotConfigLabel"
+        android:src="@drawable/wifi_lock"
+        android:contentDescription="@string/wifi_lock_icon_desciption" />
+
+    <EditText
+        android:id="@+id/passwordTextBox"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordTypeRadioGroup"
+        android:layout_below="@+id/passwordTypeRadioGroup"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/SSIDTextBox"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/SSIDLabel"
+        android:layout_alignBottom="@+id/SSIDLabel"
+        android:layout_toRightOf="@+id/passwordLabel"
+        android:ems="10"
+        android:inputType="text" />
+
+</RelativeLayout>

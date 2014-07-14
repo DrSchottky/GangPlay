@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/serverView"
+          android:icon="@drawable/server_icon"
+          android:title="@string/action_bar_sever"
+          android:showAsAction="always|withText"/>
+    
+    <item android:id="@+id/clientView"
+          android:icon="@drawable/client_icon"
+          android:title="@string/action_bar_client"
+          android:showAsAction="always|withText"/>
+    
+    <item android:id="@+id/credits"
+          android:icon="@drawable/no"
+          android:title="@string/action_bar_credits"
+          android:showAsAction="never"/>
+    
+    <item android:id="@+id/clientTimeout"
+          android:icon="@drawable/no"
+          android:title="@string/action_bar_timeout"
+          android:showAsAction="never"/>
+    
+    
+    <item android:id="@+id/hotspotConfig"
+          android:icon="@drawable/no"
+          android:title="@string/action_bar_hotspot_config"
+          android:showAsAction="never"/>
+</menu>

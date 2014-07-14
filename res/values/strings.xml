@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GangPlay</string>
+    <string name="action_settings">Settings</string>
+	<string name="action_bar_sever">Server</string>
+	<string name="action_bar_client">Client</string>
+	<string name="action_bar_credits">Credits</string>
+	<string name="action_bar_timeout">Timeout</string>
+	<string name="action_bar_client_name">Nome device</string>
+	<string name="action_bar_hotspot_config">Configurazione Hotspot</string>
+	<string name="artwork_description">Album\'s artwork</string>
+	<string name="open_btn_description">Open a file</string>
+	<string name="wifi_status_description">Wi-fi Hotspot Status</string>
+	<string name="title_label">Titolo:   </string>
+	<string name="artist_label">Autore:   </string>
+	<string name="album_label">Album:   </string>
+	<string name="secondi_label">Secondi \n</string>
+	<string name="empty_metadata">  ---  </string>
+	<string name="timeout_dialog_title">Timeout ricezione client</string>
+	<string name="open_btn_label">Scegli una traccia</string>
+	<string name="hotspot_btn_label">Premere per accendere/spegnere l\'hotspot</string>
+	<string name="device_name_label">Nome del device</string>	
+	<string name="hotspot_config_label">Configurazione HotSpot Wi-Fi</string>
+	<string name="SSID_label">SSID</string>
+	<string name="password_label">Password</string>
+	<string name="encryption_label">Sicurezza</string>
+	<string name="no_password_label">Nessuna</string>
+	<string name="WPA_password_label">WPA/WPA2 PSK</string>
+	<string name="wifi_lock_icon_desciption">WiFi lock Icon</string>
+	
+	
+</resources>
